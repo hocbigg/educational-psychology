@@ -1,57 +1,90 @@
-## Foundations of Psychology
+---
+title: Hocbigg - Educational Psychology
+description: Path to a free self-taught education in Educational Psychology.
+---
 
-A prerequisite survey of the biological, cognitive, developmental, and social bases of human behavior, providing the vocabulary and conceptual framework everything else in educational psychology builds on.
+## Introduction
 
-[Introduction to Psychology (MIT OpenCourseWare 9.00SC)](https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011) - the best all-around choice for self-study: full video lectures by John Gabrieli, detailed lecture notes, exams with solutions, and an embedded open textbook. Includes dedicated sessions on memory, learning, motivation, and child development that map directly onto later subjects in this curriculum.
+Educational psychology is the scientific study of how human beings learn, retain knowledge, and develop within instructional settings. By bridging cognitive science, developmental psychology, and classroom pedagogy, the discipline investigates why certain teaching methods succeed while others fail, how individual differences influence comprehension, and how learning environments can be intentionally structured to foster durable understanding. Whether your goal is to design effective instructional systems, improve your own self-directed learning, or understand the psychological dynamics of classrooms and training programs, this discipline provides the empirical foundation for how learning happens.
 
-[PSYC 110: Introduction to Psychology (Open Yale Courses)](https://oyc.yale.edu/introduction-psychology/psyc-110) - Paul Bloom's engaging lecture series works well if you prefer a more discussion-driven style; it covers the same territory but with different emphases, so pick either this or the MIT course rather than both.
+This curriculum assumes no prior formal training in psychology, statistics, or educational theory. It is designed for independent, self-directed learners who want a rigorous, undergraduate-level foundation in the core principles of the field. The materials prioritize empirical clarity and real-world applicability over laboratory experimental design or graduate-level research methodology. You will learn what the key findings and theoretical models of the discipline are and how they translate into instructional practice, without needing institutional access or laboratory environments.
 
-[Psychology 2e (OpenStax)](https://openstax.org/details/books/psychology-2e) - a free, peer-reviewed textbook you can use alongside either lecture series or on its own if you prefer reading to watching; useful as a reference to look up specific terms or review a topic.
+The curriculum is structured into six foundational subjects organized in a deliberate sequence:
 
-## Human Development
+- **Foundations of Psychology** provides the prerequisite survey of general psychology, establishing the terminology, cognitive architecture, and biological concepts necessary to interpret educational research.
+- **Child and Adolescent Development**, **Learning, Memory, and Cognition**, and **Motivation and Engagement** form the three core theoretical pillars of the discipline. They examine, respectively, how learners mature from early childhood through secondary education, the cognitive and behavioral mechanisms governing knowledge acquisition and memory retention, and the psychological constructs—such as self-efficacy and self-determination—that drive academic persistence.
+- **Educational Psychology: Theory and Practice** synthesizes these three pillars, demonstrating how development, cognition, and motivation intersect in classroom management, differentiated instruction, and student diversity.
+- **Classroom Assessment and Educational Measurement** completes the core sequence by introducing assessment literacy, focusing on validity, reliability, formative feedback loops, and objective test construction.
 
-How children and adolescents develop physically, cognitively, socially, and emotionally, with particular attention to the school-age years when most formal education takes place.
+While the three intermediate pillars can be studied somewhat flexibly, starting with general psychology and concluding with classroom assessment provides the most coherent conceptual progression for self-study.
 
-[Lifespan Development (OpenStax)](https://openstax.org/details/books/lifespan-development) - the primary text for this subject; covers physical, cognitive, social, and emotional development across the lifespan, grounded in current research.
+### Scope
 
-[Infant and Early Childhood Cognition (MIT OpenCourseWare 9.85)](https://ocw.mit.edu/courses/9-85-infant-and-early-childhood-cognition-fall-2012) - a deeper dive into cognitive development in the earliest years; the lecture notes and readings focus on how children acquire knowledge about objects, agents, and causality.
+This page covers only the non-negotiable core subjects that every student of educational psychology should master before branching into specialized tracks. It does not attempt to cover advanced psychometric modeling, clinical neuroimaging, or specialized instructional technologies. 
 
-[Cognitive Development in Childhood (Noba Project)](https://nobaproject.com/modules/cognitive-development-in-childhood) - a concise, well-written module by Robert Siegler covering Piaget, Vygotsky, and information-processing theories; useful as a quick supplement or review alongside the OpenStax text.
+Once you have established this foundational grounding, you can extend your studies through the other resources in this series:
 
-[Social and Personality Development in Childhood (Noba Project)](https://nobaproject.com/modules/social-and-personality-development-in-childhood) - covers attachment, peer relationships, and social understanding; read alongside the cognitive development module for a fuller picture of the developing child.
+- Explore specialized subfields such as psychometrics, educational data mining, universal design, and educational neuroscience in [Advanced Topics](advanced_topics.md).
+- Apply theoretical frameworks to tangible deliverables—such as lesson plans, evaluation rubrics, logic models, and behavior intervention plans—using [Projects](projects.md).
 
-## Learning, Memory, and Cognition
+## Curriculum
 
-The cognitive science of how people learn — classical and operant conditioning, memory systems, attention, problem solving, and the major theoretical frameworks that explain them.
+### Foundations of Psychology
 
-[Cognitive Processes (MIT OpenCourseWare 9.65)](https://ocw.mit.edu/courses/9-65-cognitive-processes-spring-2004) - detailed lecture notes covering mental representation, the architecture of memory, pattern recognition, attention, concepts, and reasoning; work through these systematically for the cognitive side of learning.
+A prerequisite survey of the biological, cognitive, developmental, and social bases of human behavior, establishing the psychological terminology and empirical principles that underpin educational psychology.
 
-[Conditioning and Learning (Noba Project)](https://nobaproject.com/modules/conditioning-and-learning) - Mark Bouton's clear treatment of classical and operant conditioning plus observational learning; read this alongside the MIT notes to connect behavioral learning theory with cognitive approaches.
+[Introduction to Psychology (MIT OpenCourseWare 9.00SC)](https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011) - A comprehensive primary lecture course featuring video lectures by John Gabrieli, lecture notes, and exams that ground beginners in the biological and cognitive foundations of behavior.
 
-[Learning How to Learn (Coursera)](https://www.coursera.org/learn/learning-how-to-learn) - Barbara Oakley and Terrence Sejnowski's massively popular course on the practical application of cognitive science to learning; free to audit and short enough to complete alongside other work; useful both as a learner and as a window into how these principles get taught.
+[PSYC 110: Introduction to Psychology (Open Yale Courses)](https://oyc.yale.edu/introduction-psychology/psyc-110) - An alternative introductory lecture series with Paul Bloom that covers similar foundational territory in a more conversational, concept-driven style; choose either this or the MIT course as your primary lecture track.
 
-## Motivation and Engagement
+[Psychology 2e (OpenStax)](https://openstax.org/details/books/psychology-2e) - A peer-reviewed, open-access textbook that serves as a complementary reading resource alongside either lecture series to reinforce key terms and concepts.
 
-The major theories of what drives people to learn — self-determination theory, self-efficacy, achievement goals, attribution theory — and how these apply in educational settings.
+### Child and Adolescent Development
 
-[Motives and Goals (Noba Project)](https://nobaproject.com/modules/motives-and-goals) - a solid overview of goal-setting, self-regulation, and the factors that sustain motivation; start here for the theoretical foundation.
+An examination of physical, cognitive, linguistic, and socio-emotional maturation from early childhood through adolescence, focusing on developmental shifts that influence learning in school environments.
 
-[Self-Efficacy (Noba Project)](https://nobaproject.com/modules/self-efficacy) - James Maddux's module on Bandura's concept of self-efficacy, one of the most researched constructs in educational psychology; read alongside the motives and goals module for a fuller picture of motivational theory.
+[Child Growth and Development (Jennifer Paris, Antoinette Ricardo, & Dawn Rymond, Open Textbook Library)](https://open.umn.edu/opentextbooks/textbooks/750) - The primary text for this subject, tracing developmental milestones, language acquisition, and personal growth across early childhood, middle childhood, and adolescence.
 
-[Self-Determination Theory (selfdeterminationtheory.org)](https://selfdeterminationtheory.org) - the central reference site for SDT, one of the dominant frameworks in educational motivation; the education section explains autonomy, competence, and relatedness needs and how supporting them affects learning outcomes.
+[Cognitive Development in Childhood (Robert Siegler, Noba Project)](https://nobaproject.com/modules/cognitive-development-in-childhood) - A focused modular primer on Piagetian stages, Vygotskian sociocultural theory, and information-processing models; read this alongside the primary textbook to deepen your grasp of cognitive growth.
 
-## Educational Psychology: Theory and Practice
+[Social and Personality Development in Childhood (Ross Thompson, Noba Project)](https://nobaproject.com/modules/social-and-personality-development-in-childhood) - A complementary module that examines attachment security, temperament, peer relationships, and the development of self-regulation in the classroom.
 
-The integrating survey course that connects psychological science to teaching — instructional strategies, classroom management, individual differences, diversity, and creating effective learning environments.
+[Adolescent Development (Jennifer Lansford, Noba Project)](https://nobaproject.com/modules/adolescent-development) - Builds sequentially on the childhood modules to cover puberty, neural remodeling, identity exploration, and parent-peer dynamics during the middle and high school years.
 
-[Educational Psychology (Seifert & Sutton, Open Textbook Library)](https://open.umn.edu/opentextbooks/textbooks/153) - a free, openly licensed textbook written specifically for teacher preparation; covers development, learning, motivation, assessment, and classroom practice in one coherent narrative; the primary text for this subject.
+### Learning, Memory, and Cognition
 
-[Educational Psychology (Anita Woolfolk, 15th ed.)](https://books.google.com/books?isbn=9780136945116) - the most widely used textbook in the field, now in its fifteenth edition; if you want the canonical reference alongside or instead of the free option, this is the standard choice.
+The cognitive and behavioral science of how knowledge is acquired, organized, and retrieved, covering conditioning, memory architectures, information processing, and transfer.
 
-## Assessment and Instructional Design
+[How People Learn: Brain, Mind, Experience, and School (National Research Council)](https://nap.nationalacademies.org/catalog/9853/how-people-learn-brain-mind-experience-and-school-expanded-edition) - The foundational consensus text for this subject, detailing how cognitive science explains expertise, conceptual understanding, memory representation, and learning transfer in real educational settings.
 
-How to design learning experiences and evaluate student learning — backward design, formative and summative assessment, rubrics, and using assessment data to improve instruction.
+[Conditioning and Learning (Mark Bouton, Noba Project)](https://nobaproject.com/modules/conditioning-and-learning) - A clear introductory module covering classical conditioning, operant principles, and observational learning that establishes the behavioral framework of learning theory.
 
-[Classroom Assessment and Educational Measurement (Brookhart & McMillan, eds.)](https://www.taylorfrancis.com/books/oa-edit/10.4324/9780429507533/classroom-assessment-educational-measurement-susan-brookhart-james-mcmillan) - an open-access edited volume covering validity, feedback, learning progressions, and formative assessment; chapter 4 on feedback and chapter 8 on embedded assessment are particularly relevant for beginners.
+[Memory (Encoding, Storage, Retrieval) (Kathleen B. McDermott & Henry L. Roediger III, Noba Project)](https://nobaproject.com/modules/memory-encoding-storage-retrieval) - A complementary cognitive reading explaining sensory, working, and long-term memory architectures along with the retrieval processes essential for durable learning.
 
-[Learning Activities & Assessment (University of Wisconsin-Madison, edX)](https://www.edx.org/learn/teaching-strategies/the-university-of-wisconsin-madison-learning-activities-assessment) - a practical course on backward design, assessment types, rubrics, and creating interactive learning experiences; free to audit and complements the Brookhart readings by giving you hands-on practice designing assessments.
+[Learning How to Learn (Coursera)](https://www.coursera.org/learn/learning-how-to-learn) - A practical, video-based applied supplement exploring chunking, cognitive overload, and spaced practice; free to audit and useful for seeing theoretical cognitive concepts translated into actionable study behaviors.
+
+### Motivation and Engagement
+
+The core psychological frameworks that explain student agency, persistence, and academic drive, including self-determination theory, self-efficacy, achievement goals, and attribution.
+
+[Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being (Richard M. Ryan & Edward L. Deci)](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf) - The seminal primary text that establishes the core tenets of Self-Determination Theory, detailing how supporting autonomy, competence, and relatedness fosters internal motivation and academic engagement.
+
+[Motives and Goals (Ayelet Fishbach & Maferima Touré-Tillery, Noba Project)](https://nobaproject.com/modules/motives-and-goals) - A complementary primer on goal selection, feedback loops, and self-regulation that provides the broader cognitive context for why students pursue or abandon academic objectives.
+
+[Self-Efficacy (James Maddux, Noba Project)](https://nobaproject.com/modules/self-efficacy) - A concise module dedicated to Albert Bandura's social cognitive construct of self-efficacy, examining how students' beliefs in their capabilities dictate their effort, resilience, and academic achievement.
+
+### Educational Psychology: Theory and Practice
+
+The comprehensive integrative survey applying psychological science to classroom practice, instructional planning, student diversity, exceptional learners, and learning environments.
+
+[Educational Psychology (Kelvin Seifert & Rosemary Sutton, Open Textbook Library)](https://open.umn.edu/opentextbooks/textbooks/153) - A freely accessible, comprehensive textbook written for teacher preparation that synthesizes learning theories, child development, classroom management, student diversity, and special educational needs into a coherent whole.
+
+[Educational Psychology (Anita Woolfolk, 15th ed.)](https://books.google.com/books?isbn=9780136945116) - The canonical, gold-standard textbook in the field; serves as a comprehensive commercial alternative to Seifert and Sutton if you prefer extensive empirical citations, pedagogical case studies, and classroom scenarios.
+
+### Classroom Assessment and Educational Measurement
+
+The principles and techniques used to evaluate student learning, design valid classroom assessments, interpret standardized data, and use formative feedback to guide instruction.
+
+[Classroom Assessment: What Teachers Need to Know (W. James Popham, 10th ed.)](https://books.google.com/books?isbn=9780138170936) - The primary foundational textbook on assessment literacy, providing straightforward explanations of validity, reliability, absence of bias, selected- and constructed-response item design, and standardized test interpretation.
+
+[Classroom Assessment and Educational Measurement (Susan M. Brookhart & James H. McMillan, eds.)](https://www.taylorfrancis.com/books/oa-edit/10.4324/9780429507533/classroom-assessment-educational-measurement-susan-brookhart-james-mcmillan) - An open-access edited volume that complements Popham with advanced scholarly perspectives on formative assessment mechanisms, learning progressions, and the psychometric principles bridging measurement theory with everyday teaching.
