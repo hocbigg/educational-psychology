@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Projects</title>
+  <meta name="description" content="Projects curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/educational-psychology/projects.html">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Projects curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/educational-psychology/projects.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/educational-psychology/">Educational Psychology</a></li>
+      <li><a href="/educational-psychology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/educational-psychology/projects.html">Projects</a></li>
+      <li><a href="https://github.com/hocbigg/educational-psychology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h1 id="projects">Projects</h1>
+<blockquote>
+<p>"What I cannot create, I do not understand." — Richard Feynman</p>
+</blockquote>
+<ul>
+<li><a href="#design-your-own-lesson-plans">Lesson Plans</a></li>
+<li><a href="#construct-your-own-scoring-rubrics">Scoring Rubrics</a></li>
+<li><a href="#formulate-your-own-behavior-intervention-plans">Behavior Intervention Plans</a></li>
+<li><a href="#develop-your-own-measurement-scales">Measurement Scales</a></li>
+<li><a href="#construct-your-own-logic-models">Logic Models</a></li>
+<li><a href="#design-your-own-program-evaluations">Program Evaluations</a></li>
+<li><a href="#run-your-own-improvement-cycles">Improvement Cycles</a></li>
+<li><a href="#write-your-own-policy-briefs">Policy Briefs</a></li>
+</ul>
+<h2 id="design-your-own-lesson-plans">Design your own lesson plans</h2>
+<ul>
+<li><a href="https://cft.vanderbilt.edu/guides-sub-pages/understanding-by-design/" target="_blank" rel="noopener noreferrer">Understanding by Design Teaching Guide (Vanderbilt University Center for Teaching)</a> - A step-by-step walkthrough of backward design covering desired outcomes, acceptable evidence, and aligned learning experiences.</li>
+<li><a href="https://education.nsw.gov.au/content/dam/main-education/about-us/educational-data/cese/2017-cognitive-load-theory-practice-guide.pdf" target="_blank" rel="noopener noreferrer">Cognitive Load Theory in Practice: Examples for the Classroom (NSW Department of Education)</a> - A practitioner manual detailing how to structure lesson plans, worked examples, and cognitive scaffolds to prevent working-memory overload.</li>
+<li><a href="https://www.ascd.org/ASCD/pdf/siteASCD/publications/UbD_WhitePaper0312.pdf" target="_blank" rel="noopener noreferrer">Understanding by Design Framework (Grant Wiggins &amp; Jay McTighe, ASCD)</a> - The foundational white paper detailing the three stages of unit design, the six facets of understanding, and the core UbD planning template.</li>
+</ul>
+<h2 id="construct-your-own-scoring-rubrics">Construct your own scoring rubrics</h2>
+<ul>
+<li><a href="https://www.cultofpedagogy.com/holistic-analytic-single-point-rubrics/" target="_blank" rel="noopener noreferrer">Know Your Terms: Holistic, Analytic, and Single-Point Rubrics (Cult of Pedagogy)</a> - A comparative breakdown of the three primary rubric formats with concrete criteria for choosing among them.</li>
+<li><a href="https://www.cultofpedagogy.com/single-point-rubric/" target="_blank" rel="noopener noreferrer">Meet the Single Point Rubric (Cult of Pedagogy)</a> - A step-by-step tutorial on building streamlined rubrics that isolate performance standards while allowing tailored qualitative feedback.</li>
+<li><a href="https://teaching.cornell.edu/teaching-resources/assessment-evaluation/using-rubrics" target="_blank" rel="noopener noreferrer">Using Rubrics for Assessment and Grading (Center for Teaching Innovation, Cornell University)</a> - A university guide on defining objective performance dimensions, drafting descriptive level indicators, and calibrating scoring reliability.</li>
+<li><a href="https://www.aacu.org/initiatives/value-initiative/value-rubrics" target="_blank" rel="noopener noreferrer">VALUE Rubrics (American Association of Colleges and Universities)</a> - Open-access, nationally validated rubric templates spanning critical thinking, quantitative literacy, and inquiry-based learning.</li>
+</ul>
+<h2 id="formulate-your-own-behavior-intervention-plans">Formulate your own behavior intervention plans</h2>
+<ul>
+<li><a href="https://iris.peabody.vanderbilt.edu/module/fba/" target="_blank" rel="noopener noreferrer">Functional Behavioral Assessment: Identifying the Reasons for Student Behavior (IRIS Center, Vanderbilt University)</a> - An interactive training module guiding learners through antecedent-behavior-consequence (ABC) data collection, hypothesis formulation, and functional analysis.</li>
+<li><a href="https://childmind.org/article/what-is-a-behavior-intervention-plan/" target="_blank" rel="noopener noreferrer">What Is a Behavior Intervention Plan? (Child Mind Institute)</a> - A clinical guide breaking down the non-negotiable components of an effective Behavior Intervention Plan (BIP), including prevention strategies, replacement behaviors, and reinforcement schedules.</li>
+</ul>
+<h2 id="develop-your-own-measurement-scales">Develop your own measurement scales</h2>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4059192/" target="_blank" rel="noopener noreferrer">Developing Questionnaires for Educational Research: AMEE Guide No. 87 (Anthony R. Artino Jr. et al.)</a> - A comprehensive, seven-step methodological guide to operationalizing constructs, pretesting items with cognitive interviews, and evaluating scale validity.</li>
+<li><a href="https://www.povertyactionlab.org/resource/repository-measurement-and-survey-design-resources" target="_blank" rel="noopener noreferrer">Repository of Measurement and Survey Design Resources (Abdul Latif Jameel Poverty Action Lab)</a> - An extensive library of methodological tools, questionnaire modules, and survey design protocols for measuring educational outcomes.</li>
+<li><a href="https://njaes.rutgers.edu/fs995/" target="_blank" rel="noopener noreferrer">FS995: A Step-By-Step Guide to Developing Effective Questionnaires and Survey Procedures (Rutgers NJAES)</a> - A structured circular detailing question format selection, response-bias mitigation, and sampling procedures for educational program evaluation.</li>
+</ul>
+<h2 id="construct-your-own-logic-models">Construct your own logic models</h2>
+<ul>
+<li><a href="https://wkkf.issuelab.org/resources/10124/10124.pdf" target="_blank" rel="noopener noreferrer">Logic Model Development Guide (W.K. Kellogg Foundation)</a> - The standard manual covering program theory of change, input-activity matrices, output mapping, and short- and long-term outcome indicators.</li>
+<li><a href="https://logicmodel.extension.wisc.edu/" target="_blank" rel="noopener noreferrer">Enhancing Program Performance with Logic Models (University of Wisconsin–Madison Division of Extension)</a> - An interactive course with downloadable templates and worked educational examples for articulating an intervention's underlying rationale.</li>
+</ul>
+<h2 id="design-your-own-program-evaluations">Design your own program evaluations</h2>
+<ul>
+<li><a href="https://stacks.cdc.gov/view/cdc/256296/cdc_256296_DS1.pdf" target="_blank" rel="noopener noreferrer">CDC Program Evaluation Framework Action Guide (Centers for Disease Control and Prevention)</a> - An 84-page manual for structuring evaluation questions, gathering credible evidence, and establishing performance standards across community and educational programs.</li>
+<li><a href="https://wkkf.issuelab.org/resources/9191/9191.pdf" target="_blank" rel="noopener noreferrer">W.K. Kellogg Foundation Evaluation Handbook (James Sanders)</a> - A practical guide to developing project-level evaluation blueprints, managing primary data collection, and synthesizing findings for stakeholder action.</li>
+<li><a href="https://doi.org/10.21061/conducting-mixed-methods-research" target="_blank" rel="noopener noreferrer">Conducting Mixed-Methods Research: From Classical Social Sciences to the Age of Big Data and Analytics (Venkatesh, Brown, &amp; Sullivan, Virginia Tech Publishing)</a> - An open-access methodological textbook detailing research design, data integration, and meta-inferences in mixed-methods evaluations.</li>
+<li><a href="https://www.betterevaluation.org/rainbow-framework" target="_blank" rel="noopener noreferrer">The Rainbow Framework (BetterEvaluation)</a> - A comprehensive task-based guide organizing the end-to-end evaluation lifecycle into seven clear methodological clusters.</li>
+</ul>
+<h2 id="run-your-own-improvement-cycles">Run your own improvement cycles</h2>
+<ul>
+<li><a href="https://www.carnegiefoundation.org/basics-of-pdsa-cycles" target="_blank" rel="noopener noreferrer">Basics of PDSA Cycles (Carnegie Foundation for the Advancement of Teaching)</a> - An introduction to improvement science methodology and rapid-iteration Plan-Do-Study-Act testing in educational settings.</li>
+<li><a href="https://www.carnegiefoundation.org/improvement-science-collection" target="_blank" rel="noopener noreferrer">Plan-Do-Study-Act (PDSA) Form (Carnegie Foundation for the Advancement of Teaching)</a> - A practical template for articulating predictions, defining data collection procedures, and documenting change-idea iterations.</li>
+<li><a href="https://www.ihi.org/resources/tools/plan-do-study-act-pdsa-worksheet" target="_blank" rel="noopener noreferrer">Plan-Do-Study-Act (PDSA) Worksheet (Institute for Healthcare Improvement)</a> - The standard worksheet format for tracking small tests of change, analyzing observed outcomes against predictions, and planning subsequent implementation steps.</li>
+</ul>
+<h2 id="write-your-own-policy-briefs">Write your own policy briefs</h2>
+<ul>
+<li><a href="https://writingcenter.unc.edu/tips-and-tools/policy-briefs/" target="_blank" rel="noopener noreferrer">Policy Briefs (UNC Writing Center)</a> - A structural guide contrasting policy writing with academic prose, focusing on audience-tailored recommendations and executive summaries.</li>
+<li><a href="https://idrc-crdi.ca/en/funding/resources-idrc-grantees/how-write-policy-brief" target="_blank" rel="noopener noreferrer">How to Write a Policy Brief (International Development Research Centre)</a> - Practical instructions on synthesizing research findings into persuasive, action-oriented policy recommendations.</li>
+<li><a href="https://www.capolicylab.org/wp-content/uploads/2023/05/Policy-Brief-Guide.pdf" target="_blank" rel="noopener noreferrer">Policy Briefs 101: A Guide for Translating Research Findings into Policy Impact (California Policy Lab)</a> - A clear guide featuring structural templates, design tips, and an actionable checklist for translating research into policy deliverables.</li>
+</ul>
+    </article>
+  </main>
+
+</body>
+</html>

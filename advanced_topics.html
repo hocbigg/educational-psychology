@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Advanced Topics</title>
+  <meta name="description" content="Advanced Topics curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/educational-psychology/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics">
+  <meta property="og:description" content="Advanced Topics curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/educational-psychology/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/educational-psychology/">Educational Psychology</a></li>
+      <li><a href="/educational-psychology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/educational-psychology/projects.html">Projects</a></li>
+      <li><a href="https://github.com/hocbigg/educational-psychology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h2 id="advanced-topics-in-educational-psychology">Advanced Topics in Educational Psychology</h2>
+<p><strong>Track Index:</strong></p>
+<ul>
+<li><strong>Learning Sciences &amp; Instructional Design</strong> — The applied science of designing, structuring, and analyzing technology-enhanced learning environments grounded in human cognitive architecture.</li>
+<li><strong>Educational Measurement &amp; Psychometrics</strong> — Advanced quantitative measurement theory, scale development, and psychometric modeling for educational and psychological testing.</li>
+<li><strong>Special Education &amp; Learner Variability</strong> — Evidence-based frameworks, tiered intervention models, and universal designs for supporting neurodivergent students and learners with disabilities.</li>
+<li><strong>Motivation, Metacognition &amp; Self-Regulated Learning</strong> — Advanced models of student autonomy, metacognitive monitoring, desirable cognitive difficulties, and empirical learning strategies.</li>
+<li><strong>Mind, Brain, and Education (Educational Neuroscience)</strong> — The neural systems supporting literacy, numeracy, and executive function, alongside rigorous critical appraisal of educational neuromyths.</li>
+</ul>
+<p><em>Note: The specialization tracks below represent distinct subfields in Educational Psychology. Learners should select one or two tracks aligned with their academic or professional goals rather than attempting to complete all tracks.</em></p>
+<h2 id="learning-sciences-instructional-design">Learning Sciences &amp; Instructional Design</h2>
+<p>The applied discipline of designing, implementing, and evaluating effective learning environments, drawing on cognitive science, instructional systems design theory, and educational data mining.</p>
+<p>Instructional Systems Design: <a href="https://www.coursera.org/learn/instructional-design-foundations-applications" target="_blank" rel="noopener noreferrer">Instructional Design Foundations and Applications (University of Illinois Urbana-Champaign, Coursera)</a> - A systematic course covering the ADDIE framework, front-end needs assessment, and performance problem analysis for real-world instructional design.</p>
+<p>Learning Sciences Foundations: <a href="https://books.google.com/books?isbn=9781108744669" target="_blank" rel="noopener noreferrer">The Cambridge Handbook of the Learning Sciences, 3rd ed. (R. Keith Sawyer, ed.)</a> - The definitive advanced handbook synthesizing foundational research on cognitive apprenticeship, scaffolding, project-based learning, and computer-supported collaborative learning.</p>
+<p>Cognitive Theory of Multimedia Learning: <a href="https://books.google.com/books?isbn=9781316638088" target="_blank" rel="noopener noreferrer">Multimedia Learning, 3rd ed. (Richard E. Mayer, Cambridge University Press)</a> - The canonical text outlining the 15 research-backed design principles that reduce extraneous cognitive processing and optimize learning from words and graphics.</p>
+<p>Educational Data Mining &amp; Learning Analytics: <a href="https://learninganalytics.upenn.edu/MOOT/bigdataeducation.html" target="_blank" rel="noopener noreferrer">Big Data and Education MOOT, 9th ed. (Ryan S. Baker, University of Pennsylvania)</a> - A comprehensive open-access textbook and video lecture series covering predictive modeling, Bayesian knowledge tracing, and behavior detection from student learning platforms.</p>
+<h2 id="educational-measurement-psychometrics">Educational Measurement &amp; Psychometrics</h2>
+<p>The quantitative science of measuring psychological and educational constructs, covering test theory, latent trait estimation, scale construction, and professional assessment standards.</p>
+<p>Foundations of Modern Psychometrics: <a href="https://ncme.org/resources/items-portal/" target="_blank" rel="noopener noreferrer">ITEMS Portal Digital Modules (National Council on Measurement in Education)</a> - A peer-reviewed digital library of interactive modules taught by leading psychometricians covering classical test theory, generalizability theory, and item analysis.</p>
+<p>Item Response Theory: <a href="https://books.google.com/books?isbn=9780805828191" target="_blank" rel="noopener noreferrer">Item Response Theory for Psychologists (Susan E. Embretson &amp; Steven P. Reise)</a> - An authoritative graduate-level text explaining 1PL, 2PL, and 3PL logistic models, polytomous scaling, item information functions, and computerized adaptive testing.</p>
+<p>Scale Construction &amp; Factor Analysis: <a href="https://books.google.com/books?isbn=9781544379340" target="_blank" rel="noopener noreferrer">Scale Development: Theory and Applications, 5th ed. (Robert F. DeVellis &amp; Carolyn T. Thorpe)</a> - A practical methodological guide to conceptualizing latent variables, writing item pools, conducting exploratory and confirmatory factor analysis, and establishing construct validity.</p>
+<p>Professional Testing Standards: <a href="https://www.testingstandards.net/open-access-files.html" target="_blank" rel="noopener noreferrer">Standards for Educational and Psychological Testing (AERA, APA, &amp; NCME)</a> - The gold-standard open-access consensus treatise defining legal, operational, and ethical benchmarks for test validity, fairness, and score interpretation.</p>
+<h2 id="special-education-learner-variability">Special Education &amp; Learner Variability</h2>
+<p>The design and implementation of responsive educational systems that support exceptional learners across the continuum of neurodivergent, cognitive, sensory, and physical differences.</p>
+<p>Inclusive Educational Systems: <a href="https://www.coursera.org/learn/disability-inclusion-education" target="_blank" rel="noopener noreferrer">Disability Inclusion in Education: Building Systems of Support (University of Cape Town, Coursera)</a> - A course addressing systemic structural accommodations, collaborative support networks, and pedagogical strategies for integrating learners with severe sensory and intellectual impairments.</p>
+<p>Universal Design for Learning: <a href="https://books.google.com/books?isbn=9780989867405" target="_blank" rel="noopener noreferrer">Universal Design for Learning: Theory and Practice (Anne Meyer, David H. Rose, &amp; David Gordon)</a> - The seminal volume by the creators of UDL detailing the cognitive and neuroscientific rationale for building flexibility into curricular goals, methods, materials, and assessments.</p>
+<p>Multi-Tiered Support Systems: <a href="https://iris.peabody.vanderbilt.edu/module/rti01/" target="_blank" rel="noopener noreferrer">RTI (Part 1): An Overview (The IRIS Center, Vanderbilt University)</a> - An open course module breaking down tiered prevention models, universal screening, progress monitoring, and data-based decision rules for intervening with struggling students.</p>
+<p>Specific Learning Difficulties &amp; Reading Science: <a href="https://www.coursera.org/learn/dyslexia" target="_blank" rel="noopener noreferrer">Overcoming Dyslexia (Yale University, Coursera)</a> - Taught by pediatrician and dyslexia researcher Sally Shaywitz, this course provides a deep dive into the phonological processing model, neuroimaging data, and evidence-based clinical and classroom reading interventions.</p>
+<h2 id="motivation-metacognition-self-regulated-learning">Motivation, Metacognition &amp; Self-Regulated Learning</h2>
+<p>The advanced study of self-directed agency, examining metacognitive calibration, executive self-regulation, strategic cognitive difficulties, and empirical evidence synthesis.</p>
+<p>Self-Regulated Learning Theory: <a href="https://books.google.com/books?isbn=9781138903197" target="_blank" rel="noopener noreferrer">Handbook of Self-Regulation of Learning and Performance, 2nd ed. (Dale H. Schunk &amp; Jeffrey A. Greene, eds.)</a> - The definitive reference work detailing social-cognitive, information-processing, and developmental perspectives on student goal orientation, monitoring, and strategic action.</p>
+<p>Metacognitive Practice in the Classroom: <a href="https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/metacognition" target="_blank" rel="noopener noreferrer">Metacognition and Self-Regulated Learning: Guidance Report (Education Endowment Foundation)</a> - An evidence-based guidance report delivering seven practical, empirically evaluated recommendations for explicitly teaching, modeling, and assessing metacognition across grade levels.</p>
+<p>Cognitive Strategy Efficacy: <a href="https://www.psychologicalscience.org/publications/journals/pspi/learning-techniques.html" target="_blank" rel="noopener noreferrer">Improving Students' Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology (John Dunlosky et al., 2013)</a> - A landmark empirical review that evaluates ten common learning techniques (e.g., practice testing, spaced repetition, rereading) across materials, learner ages, and criterion tasks.</p>
+<p>Desirable Difficulties &amp; Retention Dynamics: <a href="https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/04/EBjork_RBjork_2011.pdf" target="_blank" rel="noopener noreferrer">Making Things Hard on Yourself, But in a Good Way: Creating Desirable Difficulties to Enhance Learning (Elizabeth L. Bjork &amp; Robert A. Bjork, 2011)</a> - A seminal paper explaining why instructional conditions that slow immediate acquisition—such as interleaving, spacing, and retrieval practice—maximize durable long-term retention and flexible transfer.</p>
+<p>Large-Scale Educational Evidence Synthesis: <a href="https://inspirasifoundation.org/wp-content/uploads/2020/05/John-Hattie-Visible-Learning_-A-synthesis-of-over-800-meta-analyses-relating-to-achievement-2008.pdf" target="_blank" rel="noopener noreferrer">Visible Learning: A Synthesis of Over 800 Meta-Analyses Relating to Achievement (John Hattie)</a> - A foundational synthesis of hundreds of meta-analyses that establishes a statistical benchmark to calculate which pedagogical interventions meaningfully improve academic achievement.</p>
+<h2 id="mind-brain-and-education-educational-neuroscience">Mind, Brain, and Education (Educational Neuroscience)</h2>
+<p>The interdisciplinary frontier translating cognitive neuroscience into educational pedagogy, focusing on neurodevelopment, the biology of core academic skills, and critical consumer literacy.</p>
+<p>Foundations of Educational Neuroscience: <a href="https://www.futurelearn.com/courses/educational-neuroscience" target="_blank" rel="noopener noreferrer">Educational Neuroscience (CQUniversity, FutureLearn)</a> - An applied introductory course detailing how brain development, neuroplasticity, stress regulation, and social-emotional networks directly influence classroom instructional practice.</p>
+<p>Functional Neurobiology: <a href="https://www.coursera.org/learn/neurobiology" target="_blank" rel="noopener noreferrer">Understanding the Brain: The Neurobiology of Everyday Life (University of Chicago, Coursera)</a> - A rigorous open course taught by neurobiologist Peggy Mason that equips educators with functional knowledge of synaptic transmission, neural anatomy, sensory processing, and plasticity.</p>
+<p>The Neuroscience of Literacy: <a href="https://books.google.com/books?isbn=9780143118053" target="_blank" rel="noopener noreferrer">Reading in the Brain: The New Science of How We Read (Stanislas Dehaene)</a> - A masterwork in cognitive neuroscience detailing neuronal recycling, the visual word form area, and why phonics-based decoding aligns with the primate brain's reading circuitry.</p>
+<p>Critical Evaluation of Neuromyths: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3475349" target="_blank" rel="noopener noreferrer">Neuromyths in Education: Prevalence and Predictors of Misconceptions Among Teachers (Sanne Dekker et al., 2012)</a> - A seminal open-access study analyzing why educators frequently fall prey to commercialized brain-based claims (e.g., learning styles, left-brain/right-brain dichotomy) and how to evaluate educational claims scientifically.</p>
+    </article>
+  </main>
+
+</body>
+</html>

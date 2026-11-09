@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Hocbigg - Educational Psychology</title>
+  <meta name="description" content="Path to a free self-taught education in Educational Psychology.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/educational-psychology/">
+  <meta property="og:title" content="Hocbigg - Educational Psychology">
+  <meta property="og:description" content="Path to a free self-taught education in Educational Psychology.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/educational-psychology/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/educational-psychology/">Educational Psychology</a></li>
+      <li><a href="/educational-psychology/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/educational-psychology/projects.html">Projects</a></li>
+      <li><a href="https://github.com/hocbigg/educational-psychology" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+<header class="page-header">
+  <img src="/images/logo.png" alt="Hocbigg logo">
+  <h1>Hocbigg - Educational Psychology</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Educational Psychology.</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-05">2026-10-05</time></small></p>
+</header>
+<h2 id="introduction">Introduction</h2>
+<p>Educational psychology is the scientific study of how human beings learn, retain knowledge, and develop within instructional settings. By bridging cognitive science, developmental psychology, and classroom pedagogy, the discipline investigates why certain teaching methods succeed while others fail, how individual differences influence comprehension, and how learning environments can be intentionally structured to foster durable understanding. Whether your goal is to design effective instructional systems, improve your own self-directed learning, or understand the psychological dynamics of classrooms and training programs, this discipline provides the empirical foundation for how learning happens.</p>
+<p>This curriculum assumes no prior formal training in psychology, statistics, or educational theory. It is designed for independent, self-directed learners who want a rigorous, undergraduate-level foundation in the core principles of the field. The materials prioritize empirical clarity and real-world applicability over laboratory experimental design or graduate-level research methodology. You will learn what the key findings and theoretical models of the discipline are and how they translate into instructional practice, without needing institutional access or laboratory environments.</p>
+<p>The curriculum is structured into six foundational subjects organized in a deliberate sequence:</p>
+<ul>
+<li><strong>Foundations of Psychology</strong> provides the prerequisite survey of general psychology, establishing the terminology, cognitive architecture, and biological concepts necessary to interpret educational research.</li>
+<li><strong>Child and Adolescent Development</strong>, <strong>Learning, Memory, and Cognition</strong>, and <strong>Motivation and Engagement</strong> form the three core theoretical pillars of the discipline. They examine, respectively, how learners mature from early childhood through secondary education, the cognitive and behavioral mechanisms governing knowledge acquisition and memory retention, and the psychological constructs—such as self-efficacy and self-determination—that drive academic persistence.</li>
+<li><strong>Educational Psychology: Theory and Practice</strong> synthesizes these three pillars, demonstrating how development, cognition, and motivation intersect in classroom management, differentiated instruction, and student diversity.</li>
+<li><strong>Classroom Assessment and Educational Measurement</strong> completes the core sequence by introducing assessment literacy, focusing on validity, reliability, formative feedback loops, and objective test construction.</li>
+</ul>
+<p>While the three intermediate pillars can be studied somewhat flexibly, starting with general psychology and concluding with classroom assessment provides the most coherent conceptual progression for self-study.</p>
+<h3 id="scope">Scope</h3>
+<p>This page covers only the non-negotiable core subjects that every student of educational psychology should master before branching into specialized tracks. It does not attempt to cover advanced psychometric modeling, clinical neuroimaging, or specialized instructional technologies. </p>
+<p>Once you have established this foundational grounding, you can extend your studies through the other resources in this series:</p>
+<ul>
+<li>Explore specialized subfields such as psychometrics, educational data mining, universal design, and educational neuroscience in <a href="advanced_topics.html">Advanced Topics</a>.</li>
+<li>Apply theoretical frameworks to tangible deliverables—such as lesson plans, evaluation rubrics, logic models, and behavior intervention plans—using <a href="projects.html">Projects</a>.</li>
+</ul>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="foundations-of-psychology">Foundations of Psychology</h3>
+<p>A prerequisite survey of the biological, cognitive, developmental, and social bases of human behavior, establishing the psychological terminology and empirical principles that underpin educational psychology.</p>
+<p><a href="https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011" target="_blank" rel="noopener noreferrer">Introduction to Psychology (MIT OpenCourseWare 9.00SC)</a> - A comprehensive primary lecture course featuring video lectures by John Gabrieli, lecture notes, and exams that ground beginners in the biological and cognitive foundations of behavior.</p>
+<p><a href="https://oyc.yale.edu/introduction-psychology/psyc-110" target="_blank" rel="noopener noreferrer">PSYC 110: Introduction to Psychology (Open Yale Courses)</a> - An alternative introductory lecture series with Paul Bloom that covers similar foundational territory in a more conversational, concept-driven style; choose either this or the MIT course as your primary lecture track.</p>
+<p><a href="https://openstax.org/details/books/psychology-2e" target="_blank" rel="noopener noreferrer">Psychology 2e (OpenStax)</a> - A peer-reviewed, open-access textbook that serves as a complementary reading resource alongside either lecture series to reinforce key terms and concepts.</p>
+<h3 id="child-and-adolescent-development">Child and Adolescent Development</h3>
+<p>An examination of physical, cognitive, linguistic, and socio-emotional maturation from early childhood through adolescence, focusing on developmental shifts that influence learning in school environments.</p>
+<p><a href="https://open.umn.edu/opentextbooks/textbooks/750" target="_blank" rel="noopener noreferrer">Child Growth and Development (Jennifer Paris, Antoinette Ricardo, &amp; Dawn Rymond, Open Textbook Library)</a> - The primary text for this subject, tracing developmental milestones, language acquisition, and personal growth across early childhood, middle childhood, and adolescence.</p>
+<p><a href="https://nobaproject.com/modules/cognitive-development-in-childhood" target="_blank" rel="noopener noreferrer">Cognitive Development in Childhood (Robert Siegler, Noba Project)</a> - A focused modular primer on Piagetian stages, Vygotskian sociocultural theory, and information-processing models; read this alongside the primary textbook to deepen your grasp of cognitive growth.</p>
+<p><a href="https://nobaproject.com/modules/social-and-personality-development-in-childhood" target="_blank" rel="noopener noreferrer">Social and Personality Development in Childhood (Ross Thompson, Noba Project)</a> - A complementary module that examines attachment security, temperament, peer relationships, and the development of self-regulation in the classroom.</p>
+<p><a href="https://nobaproject.com/modules/adolescent-development" target="_blank" rel="noopener noreferrer">Adolescent Development (Jennifer Lansford, Noba Project)</a> - Builds sequentially on the childhood modules to cover puberty, neural remodeling, identity exploration, and parent-peer dynamics during the middle and high school years.</p>
+<h3 id="learning-memory-and-cognition">Learning, Memory, and Cognition</h3>
+<p>The cognitive and behavioral science of how knowledge is acquired, organized, and retrieved, covering conditioning, memory architectures, information processing, and transfer.</p>
+<p><a href="https://nap.nationalacademies.org/catalog/9853/how-people-learn-brain-mind-experience-and-school-expanded-edition" target="_blank" rel="noopener noreferrer">How People Learn: Brain, Mind, Experience, and School (National Research Council)</a> - The foundational consensus text for this subject, detailing how cognitive science explains expertise, conceptual understanding, memory representation, and learning transfer in real educational settings.</p>
+<p><a href="https://nobaproject.com/modules/conditioning-and-learning" target="_blank" rel="noopener noreferrer">Conditioning and Learning (Mark Bouton, Noba Project)</a> - A clear introductory module covering classical conditioning, operant principles, and observational learning that establishes the behavioral framework of learning theory.</p>
+<p><a href="https://nobaproject.com/modules/memory-encoding-storage-retrieval" target="_blank" rel="noopener noreferrer">Memory (Encoding, Storage, Retrieval) (Kathleen B. McDermott &amp; Henry L. Roediger III, Noba Project)</a> - A complementary cognitive reading explaining sensory, working, and long-term memory architectures along with the retrieval processes essential for durable learning.</p>
+<p><a href="https://www.coursera.org/learn/learning-how-to-learn" target="_blank" rel="noopener noreferrer">Learning How to Learn (Coursera)</a> - A practical, video-based applied supplement exploring chunking, cognitive overload, and spaced practice; free to audit and useful for seeing theoretical cognitive concepts translated into actionable study behaviors.</p>
+<h3 id="motivation-and-engagement">Motivation and Engagement</h3>
+<p>The core psychological frameworks that explain student agency, persistence, and academic drive, including self-determination theory, self-efficacy, achievement goals, and attribution.</p>
+<p><a href="https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf" target="_blank" rel="noopener noreferrer">Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being (Richard M. Ryan &amp; Edward L. Deci)</a> - The seminal primary text that establishes the core tenets of Self-Determination Theory, detailing how supporting autonomy, competence, and relatedness fosters internal motivation and academic engagement.</p>
+<p><a href="https://nobaproject.com/modules/motives-and-goals" target="_blank" rel="noopener noreferrer">Motives and Goals (Ayelet Fishbach &amp; Maferima Touré-Tillery, Noba Project)</a> - A complementary primer on goal selection, feedback loops, and self-regulation that provides the broader cognitive context for why students pursue or abandon academic objectives.</p>
+<p><a href="https://nobaproject.com/modules/self-efficacy" target="_blank" rel="noopener noreferrer">Self-Efficacy (James Maddux, Noba Project)</a> - A concise module dedicated to Albert Bandura's social cognitive construct of self-efficacy, examining how students' beliefs in their capabilities dictate their effort, resilience, and academic achievement.</p>
+<h3 id="educational-psychology-theory-and-practice">Educational Psychology: Theory and Practice</h3>
+<p>The comprehensive integrative survey applying psychological science to classroom practice, instructional planning, student diversity, exceptional learners, and learning environments.</p>
+<p><a href="https://open.umn.edu/opentextbooks/textbooks/153" target="_blank" rel="noopener noreferrer">Educational Psychology (Kelvin Seifert &amp; Rosemary Sutton, Open Textbook Library)</a> - A freely accessible, comprehensive textbook written for teacher preparation that synthesizes learning theories, child development, classroom management, student diversity, and special educational needs into a coherent whole.</p>
+<p><a href="https://books.google.com/books?isbn=9780136945116" target="_blank" rel="noopener noreferrer">Educational Psychology (Anita Woolfolk, 15th ed.)</a> - The canonical, gold-standard textbook in the field; serves as a comprehensive commercial alternative to Seifert and Sutton if you prefer extensive empirical citations, pedagogical case studies, and classroom scenarios.</p>
+<h3 id="classroom-assessment-and-educational-measurement">Classroom Assessment and Educational Measurement</h3>
+<p>The principles and techniques used to evaluate student learning, design valid classroom assessments, interpret standardized data, and use formative feedback to guide instruction.</p>
+<p><a href="https://books.google.com/books?isbn=9780138170936" target="_blank" rel="noopener noreferrer">Classroom Assessment: What Teachers Need to Know (W. James Popham, 10th ed.)</a> - The primary foundational textbook on assessment literacy, providing straightforward explanations of validity, reliability, absence of bias, selected- and constructed-response item design, and standardized test interpretation.</p>
+<p><a href="https://www.taylorfrancis.com/books/oa-edit/10.4324/9780429507533/classroom-assessment-educational-measurement-susan-brookhart-james-mcmillan" target="_blank" rel="noopener noreferrer">Classroom Assessment and Educational Measurement (Susan M. Brookhart &amp; James H. McMillan, eds.)</a> - An open-access edited volume that complements Popham with advanced scholarly perspectives on formative assessment mechanisms, learning progressions, and the psychometric principles bridging measurement theory with everyday teaching.</p>
+    </article>
+  </main>
+
+</body>
+</html>
